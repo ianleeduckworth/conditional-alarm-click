@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ConditionalAlarmClock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="19" />
+    <!-- <uses-sdk android:minSdkVersion="21"/> -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FULL_WAKE_LOCK" /> <!--TODO see if this is necessary -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/conditional_64_64"
+        android:label="Conditional Alarm" >
+        <activity
+            android:name="com.example.ConditionalAlarmClock.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ConditionalAlarmClock.AlarmActivatedActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service android:name="com.example.ConditionalAlarmClock.ReminderService" />
+
+        <receiver android:name="com.example.BroadcastReceiver.OnAlarmReceiver" />
+        <receiver android:name="com.example.ConditionalAlarmClock.OnBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="JUnit Tests"
+        android:targetPackage="com.example.ConditionalAlarmClock" />
+
+</manifest>
