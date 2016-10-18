@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conditional Alarms"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/allAlarms"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.75"
+        android:choiceMode="singleChoice" />
+
+    <Button
+        android:id="@+id/edit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:longClickable="false"
+        android:onClick="EditBtn_OnClick"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/delete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="DeleteBtn_OnClick"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/createNew"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="CreateNew_OnClick"
+        android:text="Create New" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="100dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:paddingLeft="8dp" >
+
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time to wake up!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="26sp" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/turnOffText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide right to turn off..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
+    <SeekBar
+        android:id="@+id/turnOffAlarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:max="100"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/x_button_red" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/snoozeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide right to snooze..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
+    <SeekBar
+        android:id="@+id/snoozeAlarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:max="100"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/x_button_yellow" />
+
+</LinearLayout>

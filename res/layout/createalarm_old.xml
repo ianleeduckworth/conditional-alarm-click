@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp" >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Alarm Time"
+                android:id="@+id/mainText" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <ToggleButton
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:text="M"
+                android:id="@+id/mon" android:layout_below="@+id/timePicker"
+                android:layout_alignParentStart="true" android:textOff="M" android:textOn="M"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            style="android:TimePickerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mainText"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="20px" />
+
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="T"
+                      android:id="@+id/tues"
+                      android:textOff="T" android:textOn="T"
+                      android:layout_alignTop="@+id/mon" android:layout_toEndOf="@+id/mon"/>
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="W"
+                      android:id="@+id/weds"
+                      android:textOff="W" android:textOn="W" android:layout_alignTop="@+id/tues"
+                      android:layout_toEndOf="@+id/tues"/>
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="T"
+                      android:id="@+id/thurs"
+                      android:textOff="T" android:textOn="T" android:layout_alignTop="@+id/weds"
+                      android:layout_toEndOf="@+id/weds"/>
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="F"
+                      android:id="@+id/fri"
+                      android:textOff="F" android:textOn="F" android:layout_alignTop="@+id/thurs"
+                      android:layout_toEndOf="@+id/thurs" android:checked="false"/>
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="S"
+                      android:id="@+id/sat"
+                      android:textOff="S" android:textOn="S"
+                      android:layout_alignTop="@+id/fri" android:layout_toEndOf="@+id/fri"/>
+        <ToggleButton android:layout_width="100px" android:layout_height="100px" android:text="S"
+                      android:id="@+id/sun"
+                      android:textOff="S" android:textOn="S"
+                      android:layout_toEndOf="@+id/sat" android:layout_alignTop="@+id/sat"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conditions"
+                android:width="250px"
+                android:height="120px"
+                android:id="@+id/conditionsBtn"
+                android:onClick="ConditionsBtn_OnClick"
+                android:layout_alignParentBottom="true" 
+                android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Alarm Name"
+            android:id="@+id/textView" android:layout_below="@+id/mon" android:layout_alignParentStart="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/alarmName" android:layout_below="@+id/textView" android:layout_alignParentStart="true"/>
+</RelativeLayout>

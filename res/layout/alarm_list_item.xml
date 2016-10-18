@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <TextView
+        android:id="@+id/nameOfAlarm"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Alarm Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nameOfAlarm"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton_Sun"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="S"
+            android:textOn="S"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Mon"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="M"
+            android:textOn="M"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Tues"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="T"
+            android:textOn="T"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Wed"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="W"
+            android:textOn="W"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Thu"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="T"
+            android:textOn="T"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Fri"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="F"
+            android:textOn="F"
+            android:width="30dp" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton_Sat"
+            android:focusable="false"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:clickable="false"
+            android:height="40dp"
+            android:text="ToggleButton"
+            android:textOff="S"
+            android:textOn="S"
+            android:width="30dp" />
+        
+    	<TextView
+        	android:id="@+id/timeOfAlarm"
+        	android:focusable="false"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="00:00"
+        	android:layout_marginLeft="15dp"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isSnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:paddingLeft="10dp"
+        android:text="S"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/isRain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/isSnow"
+        android:text="R"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
