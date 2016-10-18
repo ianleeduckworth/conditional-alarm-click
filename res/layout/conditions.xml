@@ -85,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:onClick="CancelBtn_OnClick"
+            android:onClick="CancelButton_OnClick"
             android:text="Cancel" />
 
         <Button
