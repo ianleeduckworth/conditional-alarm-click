@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConditionalAlarmClock</string>
+    <string name="Rain">Rain</string>
+    <string name="Finish">Finish</string>
+</resources>
