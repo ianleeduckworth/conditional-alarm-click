@@ -689,6 +689,11 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		}
 			
 	}
+	
+	private void CancelButton_OnClick(View view) {
+		AlarmInfo.reset();
+		setContentView(R.layout.mainwindow);
+	}
 
 	private void populateAllAlarmsListView() {
 		Cursor cursor = db.fetchAllAlarms();
