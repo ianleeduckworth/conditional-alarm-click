@@ -18,6 +18,16 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.75"
         android:choiceMode="singleChoice" />
+    
+    <TextView
+        android:id="@+id/empty_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="1430px"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="You have no alarms saved" >
+    </TextView>
 
     <Button
         android:id="@+id/edit"
