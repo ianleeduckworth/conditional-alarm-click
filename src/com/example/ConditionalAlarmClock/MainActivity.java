@@ -702,7 +702,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 		// Set adapter for list view
 		ListView allAlarms = (ListView) findViewById(R.id.allAlarms);
-
+		allAlarms.setEmptyView(findViewById(R.id.empty_list_item));
 		allAlarms.setAdapter(cursorAdapter);
 
 		long pos = AlarmInfo.getSelectedPos();
