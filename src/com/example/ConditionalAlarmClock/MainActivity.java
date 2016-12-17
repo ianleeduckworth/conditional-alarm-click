@@ -630,23 +630,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		EditText alarmName = (EditText) findViewById(R.id.alarmNameTxt);
 		alarmName.setText(AlarmInfo.getAlarmName());
 	}
-
-	/**
-	 * Called when the Rain switch is toggled
-	 * 
-	 * @param view
-	 */
-	public void RainSwitch_OnClick(View view) {
-		Switch rainSwitch = (Switch) findViewById(R.id.rainSwitch);
-		EditText rainText = (EditText) findViewById(R.id.rainTime);
-
-		if (rainSwitch.isChecked())
-			rainText.setEnabled(true);
-		else {
-			rainText.setText(StringHelper.EMPTY);
-			rainText.setEnabled(false);
-		}
-	}
 	
 	public void RainCheckBox_OnClick(View view) {
 		CheckBox rainCheckBox = (CheckBox) findViewById(R.id.rainCheckbox);
@@ -657,23 +640,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		else {
 			rainText.setText(StringHelper.EMPTY);
 			rainText.setEnabled(false);
-		}
-	}
-
-	/**
-	 * Called when the Snow switch is toggled
-	 * 
-	 * @param view
-	 */
-	public void SnowSwitch_OnClick(View view) {
-		Switch snowSwitch = (Switch) findViewById(R.id.snowSwitch);
-		EditText snowText = (EditText) findViewById(R.id.snowTime);
-
-		if (snowSwitch.isChecked())
-			snowText.setEnabled(true);
-		else {
-			snowText.setText(StringHelper.EMPTY);
-			snowText.setEnabled(false);
 		}
 	}
 	
